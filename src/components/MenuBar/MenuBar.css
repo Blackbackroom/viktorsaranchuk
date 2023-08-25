@@ -1,0 +1,7 @@
+.MenuBar {
+  height: 3%;
+  background-color: greenyellow;
+  margin: var(--default-margin);
+  margin-top: 0;
+  border-radius: var(--default-border-radius);
+}

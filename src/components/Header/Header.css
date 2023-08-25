@@ -1,0 +1,6 @@
+.Header {
+  margin: var(--default-margin);
+  height: 25%;
+  background-color: brown;
+  border-radius: var(--default-border-radius);
+}
