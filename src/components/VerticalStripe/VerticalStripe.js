@@ -13,7 +13,7 @@ export default function VerticalStripe() {
   return (
     <div
       className={`VerticalStripe ${isMobile ? "VerticalStripeMobile" : ""} ${
-        isActive ? "" : "expanded"
+        isActive ? "" : "collapsed"
       }`}
     >
       <MobileView
