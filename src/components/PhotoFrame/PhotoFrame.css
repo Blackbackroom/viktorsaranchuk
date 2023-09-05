@@ -11,7 +11,7 @@
   border-radius: 50%;
   right: calc(2 * var(--home-page-padding));
   border: var(--home-page-padding) solid white;
-  background-image: url("../../../public/photo.jpeg");
+  background-image: url("@public/photo.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
