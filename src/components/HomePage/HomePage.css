@@ -1,12 +1,12 @@
 :root {
-  --default-margin: 0.1rem;
-  --default-padding: 0.1rem;
-  --default-border-radius: 1rem;
+  --home-page-padding: 1vh;
 }
 
 .HomePage {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: goldenrod;
+  background-color: var(--default-body-background-color);
+  box-sizing: border-box;
+  padding: var(--home-page-padding);
 }

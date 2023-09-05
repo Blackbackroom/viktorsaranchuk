@@ -1,6 +1,37 @@
+:root {
+  --header-background-color: #348ebf;
+  --header-height: 20vh;
+  --header-margin-calculated: calc(3 * var(--home-page-padding));
+  --header-margin: var(--header-margin-calculated) 0
+    var(--header-margin-calculated) 0;
+}
+
 .Header {
-  margin: var(--default-margin);
-  height: 25%;
-  background-color: brown;
-  border-radius: var(--default-border-radius);
+  height: var(--header-height);
+  background-color: var(--header-background-color);
+  position: relative;
+  z-index: 1;
+  margin: var(--header-margin);
+}
+
+.NameWrapper {
+  color: #ebe2e2;
+  position: absolute;
+  text-align: center;
+}
+
+.NameWrapperMobile {
+  margin-left: var(--home-page-padding);
+}
+
+.NameWrapperBrowser {
+  width: var(--vertical-stripe-width);
+}
+
+.Name {
+  font-size: 5vh;
+}
+
+.Title {
+  font-size: 3vh;
 }

@@ -1,0 +1,18 @@
+:root {
+  --photo-frame-radius: calc(var(--header-height));
+}
+
+.PhotoFrame {
+  background-color: wheat;
+  height: calc(var(--photo-frame-radius) + 2 * var(--home-page-padding));
+  width: calc(var(--photo-frame-radius) + 2 * var(--home-page-padding));
+  margin-top: calc(0vw - 2 * var(--home-page-padding));
+  position: absolute;
+  border-radius: 50%;
+  right: calc(2 * var(--home-page-padding));
+  border: var(--home-page-padding) solid white;
+  background-image: url("../../../public/photo.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: center;
+}

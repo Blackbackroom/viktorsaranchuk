@@ -1,0 +1,13 @@
+:root {
+  --vertical-stripe-width: 30vw;
+}
+
+.VerticalStripe {
+  background-color: #0f5570;
+  width: var(--vertical-stripe-width);
+  height: calc(100vh - 2 * var(--home-page-padding));
+  margin-top: calc(
+    0vh - var(--header-height) - 2 * var(--header-margin-calculated)
+  );
+  position: absolute;
+}
