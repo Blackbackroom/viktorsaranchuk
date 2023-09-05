@@ -1,7 +1,7 @@
 :root {
   --header-background-color: #348ebf;
   --header-height: 20vh;
-  --header-height-mobile: 10vh;
+  --header-height-mobile: calc(var(--header-height) / 2);
   --header-margin-calculated: calc(3 * var(--home-page-padding));
   --header-margin: var(--header-margin-calculated) 0
     var(--header-margin-calculated) 0;
@@ -11,22 +11,35 @@
   height: var(--header-height);
   background-color: var(--header-background-color);
   position: relative;
+  display: flex;
   z-index: 1;
   margin: var(--header-margin);
   box-sizing: border-box;
+  font-family: fantasy;
+  color: white;
+  text-shadow: 1px 1px #114f9b;
 }
 
 .HeaderMobile {
   height: var(--header-height-mobile);
 }
 
-.NameWrapper {
-  color: #ebe2e2;
-  position: absolute;
-  text-align: center;
-  box-sizing: border-box;
+.NameSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 6.75vh;
 }
 
-.NameWrapperBrowser {
-  width: var(--vertical-stripe-width);
+.NameSectionMobile {
+}
+
+.Name {
+  font-size: min(4vw, 5vh);
+}
+
+.Title {
+  font-size: min(2.5vw, 2.5vh);
+  top: -1vh;
+  position: relative;
 }
