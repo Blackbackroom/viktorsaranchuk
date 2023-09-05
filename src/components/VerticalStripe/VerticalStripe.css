@@ -1,13 +1,41 @@
 :root {
-  --vertical-stripe-width: 30vw;
+  --vertical-stripe-width: 20vw;
+  --vertical-stripe-width-locker: 3vw;
+  --vertical-stripe-background-color: #0f5570;
 }
 
 .VerticalStripe {
-  background-color: #0f5570;
+  background-color: var(--vertical-stripe-background-color);
   width: var(--vertical-stripe-width);
   height: calc(100vh - 2 * var(--home-page-padding));
   margin-top: calc(
     0vh - var(--header-height) - 2 * var(--header-margin-calculated)
   );
   position: absolute;
+  overflow: hidden;
+}
+
+.VerticalStripeMobile {
+  width: var(--vertical-stripe-width-locker);
+  margin-top: calc(
+    0vh - var(--header-height-mobile) - 2 * var(--header-margin-calculated)
+  );
+  transition: all 1s;
+}
+
+.VerticalStripeLocker {
+  width: var(--vertical-stripe-width-locker);
+  height: calc(100vh - 2 * var(--home-page-padding));
+  position: absolute;
+  right: 0;
+  box-sizing: border-box;
+  background: linear-gradient(
+    90deg,
+    var(--vertical-stripe-background-color) 0%,
+    #1d7192 100%
+  );
+}
+
+.expanded {
+  width: var(--vertical-stripe-width);
 }

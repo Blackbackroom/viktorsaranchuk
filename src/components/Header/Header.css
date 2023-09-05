@@ -1,6 +1,7 @@
 :root {
   --header-background-color: #348ebf;
   --header-height: 20vh;
+  --header-height-mobile: 10vh;
   --header-margin-calculated: calc(3 * var(--home-page-padding));
   --header-margin: var(--header-margin-calculated) 0
     var(--header-margin-calculated) 0;
@@ -12,34 +13,20 @@
   position: relative;
   z-index: 1;
   margin: var(--header-margin);
+  box-sizing: border-box;
+}
+
+.HeaderMobile {
+  height: var(--header-height-mobile);
 }
 
 .NameWrapper {
   color: #ebe2e2;
   position: absolute;
   text-align: center;
-}
-
-.NameWrapperMobile {
-  margin-left: var(--home-page-padding);
+  box-sizing: border-box;
 }
 
 .NameWrapperBrowser {
   width: var(--vertical-stripe-width);
-}
-
-.NameBrowser {
-  font-size: 5vh;
-}
-
-.NameMobile {
-  font-size: 4vh;
-}
-
-.TitleBrowser {
-  font-size: 3vh;
-}
-
-.TitleMobile {
-  font-size: 2vh;
 }

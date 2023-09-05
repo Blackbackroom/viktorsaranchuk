@@ -1,5 +1,6 @@
 :root {
   --photo-frame-radius: calc(var(--header-height));
+  --photo-frame-radius-mobile: calc(var(--header-height-mobile));
 }
 
 .PhotoFrame {
@@ -15,4 +16,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
+}
+
+.PhotoFrameMobile {
+  height: calc(var(--photo-frame-radius-mobile) + 2 * var(--home-page-padding));
+  width: calc(var(--photo-frame-radius-mobile) + 2 * var(--home-page-padding));
 }
