@@ -13,6 +13,7 @@
   );
   position: absolute;
   overflow: hidden;
+  display: flex;
 }
 
 .VerticalStripeMobile {

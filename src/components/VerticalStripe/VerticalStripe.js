@@ -10,12 +10,12 @@ export default function VerticalStripe() {
     setActive(!isActive);
   }
 
+  const className = `VerticalStripe ${isMobile ? "VerticalStripeMobile" : ""} ${
+    isActive ? "" : "collapsed"
+  }`;
+
   return (
-    <div
-      className={`VerticalStripe ${isMobile ? "VerticalStripeMobile" : ""} ${
-        isActive ? "" : "collapsed"
-      }`}
-    >
+    <div className={className}>
       <div className="VerticalStripeLocker" onTouchStart={ontouchstart}></div>
     </div>
   );
