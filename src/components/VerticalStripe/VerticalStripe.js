@@ -1,6 +1,6 @@
 import "@components/Header/Header.css";
 import "./VerticalStripe.css";
-import { isMobile, MobileView } from "react-device-detect";
+import { isMobile } from "react-device-detect";
 import { useState } from "react";
 
 export default function VerticalStripe() {
@@ -16,10 +16,7 @@ export default function VerticalStripe() {
         isActive ? "" : "collapsed"
       }`}
     >
-      <MobileView
-        className="VerticalStripeLocker"
-        onTouchStart={ontouchstart}
-      ></MobileView>
+      <div className="VerticalStripeLocker" onTouchStart={ontouchstart}></div>
     </div>
   );
 }
